@@ -1,0 +1,52 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+}
+
+.App-header {
+  background-color: #da581c;
+  padding: 20px;
+  color: rgb(255, 255, 255);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-shadow: black;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-shadow: #282c34;
+}
+
+.Logo-container {
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.App-logo {
+  height: 30%;
+  width: 30%;
+  animation: App-logo-spin infinite 10s linear;
+  pointer-events: none;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+footer {
+  background-color: #16171a;
+  height: fit-content;
+}
+
+footer a {
+  color: #da581c;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: x-large;
+}
