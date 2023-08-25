@@ -16,7 +16,7 @@ function App() {
       <DadJoke />
       <footer>
         <a href="https://info.leapit.us" target="_blank" rel="noopener noreferrer">
-          Check out my Docs website to see how this was built!
+          Check out my GitBook to see how this was built!
         </a>
       </footer>
     </div>
