@@ -15,9 +15,12 @@ function App() {
       </div>
       <DadJoke />
       <footer>
-        <a href="https://info.leapit.us" target="_blank" rel="noopener noreferrer">
-          Check out my GitBook to see how this was built!
+        <a href="https://info.leapit.us" target="_blank" rel="noopener noreferrer" className="navigation-link">
+          <span role="img" aria-label="Hand pointing right">👉</span>
+          Check out my GitBook to see how this was built! 
+          <span role="img" aria-label="Hand pointing left">👈</span>
         </a>
+
       </footer>
     </div>
   );
