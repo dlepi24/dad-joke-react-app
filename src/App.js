@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import DadJoke from './DadJoke';
 import './App.css';
 import logo from './logo.png';
 
 function App() {
+  const jokeContainerRef = useRef(null);
+
+  const scrollToRef = () => {
+    if (jokeContainerRef.current) {
+      jokeContainerRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="App">
       <header className="App-header">
@@ -13,14 +21,13 @@ function App() {
       <div className="Logo-container">
         <img src={logo} className="App-logo" alt="logo" />
       </div>
-      <DadJoke />
+      <DadJoke scrollToRef={scrollToRef} jokeContainerRef={jokeContainerRef} />
       <footer>
         <a href="https://info.leapit.us" target="_blank" rel="noopener noreferrer" className="navigation-link">
           <span role="img" aria-label="Hand pointing right">👉</span>
           Check out my GitBook to see how this was built! 
           <span role="img" aria-label="Hand pointing left">👈</span>
         </a>
-
       </footer>
     </div>
   );
