@@ -14,10 +14,15 @@ function App() {
 
   return (
     <div className="App">
+      {/* Floating resume button */}
+      <a href="https://info.leapit.us/resume-project/resume" target="_blank" rel="noopener noreferrer" className="Resume-button floating-button">
+        View Resume
+      </a>
+
       <header className="App-header">
-        <h1><strong>Welcome!</strong></h1>
+        <h1><strong>Greetings!</strong></h1>
         <strong>
-          <p>There's not much to do here yet, but feel free to fetch a dad joke or check out my docs site to see how this page was created.</p>
+          <p>While there's not much to explore just yet, you're welcome to grab a dad joke from <u>below</u> or explore my docs site to learn how this page came to life.</p>
         </strong>
       </header>
       <div className="Logo-container">

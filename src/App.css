@@ -52,6 +52,41 @@ body {
   }
 }
 
+/* Add this to your CSS */
+.Resume-button.floating-button {
+  background-color: #da581c;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 999; /* Make sure it's on top of other content */
+  animation: pulseAnimation 15s infinite; /* Apply the animation */
+}
+
+@keyframes pulseAnimation {
+  0%, 100% {
+    transform: scale(1); /* Initial and final state */
+  }
+  50% {
+    transform: scale(1.2); /* Scale up by 5% in the middle of the animation */
+  }
+}
+
+strong p u {
+  text-decoration: underline;
+}
+
+.Resume-button.floating-button:hover {
+  background-color: #db6e15;
+  color: white;
+}
+
+
 footer {
   background-color: #000000;
   flex-shrink: 0; /* Allow the footer to shrink if necessary */

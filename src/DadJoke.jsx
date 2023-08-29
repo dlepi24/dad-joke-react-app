@@ -31,7 +31,7 @@ function DadJoke({ scrollToRef, jokeContainerRef }) {
         </div>
       )}
       <button className="Joke-button" onClick={fetchJoke}>
-        <strong>{joke ? 'Another one?' : 'Click Here!'}</strong>
+        <strong>{joke ? 'Anotha one?' : 'Click Here!'}</strong>
       </button>
     </div>
   );
