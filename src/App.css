@@ -1,35 +1,39 @@
 body {
   margin: 0;
   padding: 0;
-}
-
-.App {
-  text-align: center;
-  min-height: 100vh; /* Set a minimum height to fill the viewport */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #da581c; /* Set text color */
+  background: linear-gradient(to bottom, #292b30, #6b7d97); /* Gradient background */
   display: flex;
   flex-direction: column;
-  background: linear-gradient(to bottom, #292b30, #6b7d97); /* Gradient background */
+  min-height: 100vh;
+  justify-content: center; /* Vertically center content */
+  align-items: center; /* Horizontally center content */
+  text-align: center; /* Center text within the body */
 }
 
+/* Add a subtle bounce animation to the header */
 .App-header {
-  background-color: #da581c;
-  color: rgb(255, 255, 255);
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  text-shadow: black;
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Add text shadow for a subtle effect */
+  margin-bottom: 1rem; /* Add spacing below the text */
+  animation: bounce 2s infinite; /* Apply the bounce animation */
 }
 
-h1 {
-  font-size: bold;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  text-shadow: #282c34;
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px); /* Adjust the bounce height as needed */
+  }
 }
 
 .Logo-container {
   margin: 2rem 0;
-  width: 100%;
   display: flex;
   justify-content: center; /* Horizontally center items */
-  align-items: center; /* Vertically center items */
 }
 
 .App-logo {
@@ -37,9 +41,6 @@ h1 {
   width: 21%;
   animation: App-logo-spin infinite 6s linear;
   pointer-events: none;
-  display: flex;
-  justify-content: center; /* Horizontally center items */
-  align-items: center; /* Vertically center items */
 }
 
 @keyframes App-logo-spin {
@@ -53,16 +54,14 @@ h1 {
 
 footer {
   background-color: #000000;
-  height: max-content;
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  flex-shrink: 0; /* Allow the footer to shrink if necessary */
+  padding: 1rem 0; /* Add some padding for better visual */
+  text-align: center;
 }
 
 footer a {
   color: #da581c;
   text-decoration: none;
   font-weight: bold;
-  font-size: x-large;
-  padding-top: 1rem;
+  font-size: larger;
 }

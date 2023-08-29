@@ -16,12 +16,16 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1><strong>Welcome!</strong></h1>
-        <strong><p>There's not much to do here yet, but feel free to fetch a dad joke or check out my docs site to see how this page was created.</p></strong>
+        <strong>
+          <p>There's not much to do here yet, but feel free to fetch a dad joke or check out my docs site to see how this page was created.</p>
+        </strong>
       </header>
       <div className="Logo-container">
         <img src={logo} className="App-logo" alt="logo" />
       </div>
-      <DadJoke scrollToRef={scrollToRef} jokeContainerRef={jokeContainerRef} />
+      <div className="DadJoke" ref={jokeContainerRef}> {/* Add ref to the div */}
+        <DadJoke scrollToRef={scrollToRef} jokeContainerRef={jokeContainerRef} />
+      </div>
       <footer>
         <a href="https://info.leapit.us" target="_blank" rel="noopener noreferrer" className="navigation-link">
           <span role="img" aria-label="Hand pointing right">👉</span>
