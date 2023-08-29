@@ -37,11 +37,21 @@ body {
 }
 
 .App-logo {
-  height: 21%;
-  width: 21%;
+  height: 30vw; /* Adjust the size based on your preference */
+  width: 30vw; /* Adjust the size based on your preference */
+  max-width: 800px; /* Add a max width to prevent it from getting too large on larger screens */
   animation: App-logo-spin infinite 6s linear;
   pointer-events: none;
 }
+
+@media (max-width: 768px) {
+  .App-logo {
+    height: 55vw;
+    width: 55vw;
+    max-width: 400px;
+  }
+}
+
 
 @keyframes App-logo-spin {
   from {
