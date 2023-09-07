@@ -3,6 +3,8 @@ import DadJoke from './DadJoke';
 import './App.css';
 import logo from './logo.png';
 
+/* Thank ChatGPT for the majority of this code :) */
+
 function App() {
   const jokeContainerRef = useRef(null);
 
@@ -15,7 +17,7 @@ function App() {
   return (
     <div className="App">
       {/* Floating resume button */}
-      <a href="https://info.leapit.us/resume-project/resume" target="_blank" rel="noopener noreferrer" className="Resume-button floating-button">
+      <a href="https://docs.leapit.us/resume-project/resume" target="_blank" rel="noopener noreferrer" className="Resume-button floating-button">
         View Resume
       </a>
 
@@ -32,7 +34,7 @@ function App() {
         <DadJoke scrollToRef={scrollToRef} jokeContainerRef={jokeContainerRef} />
       </div>
       <footer>
-        <a href="https://info.leapit.us" target="_blank" rel="noopener noreferrer" className="navigation-link">
+        <a href="https://docs.leapit.us" target="_blank" rel="noopener noreferrer" className="navigation-link">
           <span role="img" aria-label="Hand pointing right">👉</span>
           Check out my GitBook to see how this was built! 
           <span role="img" aria-label="Hand pointing left">👈</span>

@@ -44,11 +44,17 @@ body {
   pointer-events: none;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .App-logo {
     height: 55vw;
     width: 55vw;
     max-width: 400px;
+  }
+} */
+
+@media (max-width: 768px) {
+  body {
+    display: block; /* Change display to block for mobile */
   }
 }
 
@@ -91,10 +97,29 @@ strong p u {
   text-decoration: underline;
 }
 
-.Resume-button.floating-button:hover {
-  background-color: #db6e15;
-  color: white;
+/* Add this to your CSS */
+.Resume-button.floating-button {
+  background-color: white; /* White background when not hovering */
+  color: #da581c; /* Orange text when not hovering */
+  padding: 10px 20px;
+  text-decoration: none;
+  border: 2px solid black; /* Black outline when not hovering */
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Include border-color in the transition */
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 999; /* Make sure it's on top of other content */
+  animation: pulseAnimation 15s infinite; /* Apply the animation */
 }
+
+.Resume-button.floating-button:hover {
+  background-color: black; /* Black background when hovering */
+  color: #da581c; /* Orange text when hovering */
+  border: 2px solid white; /* White outline when hovering */
+}
+
 
 
 footer {
