@@ -1,4 +1,3 @@
-
 .Joke-container {
   background-color: #ffffff;
   padding: 15px;
@@ -8,23 +7,40 @@
   text-align: center;
   margin-bottom: 1rem; /* Decrease the margin to bring the button closer */
 }
-  /* Update the DadJoke container */
-  .DadJoke {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0.4rem 0;
-    margin: 0;
-    flex-grow: 1;
+
+.DadJoke {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 1rem 0;
+  min-height: 33vh; /* Adjust the height as needed */
+}
+
+
+  /* Hide the welcome message on mobile */
+.DadJoke .welcome-message {
+  display: none;
+}
+
+/* Style the welcome message differently on desktop */
+@media (min-width: 769px) {
+  .DadJoke .hide-welcome {
+    display: none;
   }
 
-/* Update the Joke-button-container */
+  .DadJoke .welcome-message {
+    display: block;
+    margin-bottom: 1rem;
+  }
+}
+
+
 .Joke-button-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem 0; /* Add some spacing around the button */
+  position: sticky;
+  bottom: 0;
   background-color: #292b30;
+  width: 100%;
 }
 
 .Joke-button {
@@ -37,6 +53,7 @@
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
 }
+
 
 .Joke-button:hover {
   background-color: #db6e15;

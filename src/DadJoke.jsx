@@ -25,6 +25,7 @@ function DadJoke({ scrollToRef, jokeContainerRef }) {
 
   return (
     <div className="DadJoke">
+      {/* Add a class to style the welcome message differently on desktop */}
       {showJoke && (
         <div className="Joke-container" ref={jokeContainerRef}>
           <p><strong>{joke}</strong></p>

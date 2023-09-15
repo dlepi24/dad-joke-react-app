@@ -3,8 +3,6 @@ import DadJoke from './DadJoke';
 import './App.css';
 import logo from './logo.png';
 
-/* Thank ChatGPT for the majority of this code :) */
-
 function App() {
   const jokeContainerRef = useRef(null);
 
@@ -22,17 +20,15 @@ function App() {
       </a>
 
       <header className="App-header">
-        <h1><strong>Greetings!</strong></h1>
         <strong>
-          <p>While there's not much to explore just yet, you're welcome to grab a dad joke from <u>below</u> or explore my docs site to learn how this page came to life.</p>
+          <p>Our site is under construction. Click below for a dad joke while you wait...</p>
         </strong>
       </header>
-      <div className="Logo-container">
-        <img src={logo} className="App-logo" alt="logo" />
-      </div>
-      <div className="DadJoke" ref={jokeContainerRef}> {/* Add ref to the div */}
+
+      <div className="DadJoke" ref={jokeContainerRef}>
         <DadJoke scrollToRef={scrollToRef} jokeContainerRef={jokeContainerRef} />
       </div>
+
       <footer>
         <a href="https://docs.leapit.us" target="_blank" rel="noopener noreferrer" className="navigation-link">
           <span role="img" aria-label="Hand pointing right">👉</span>
