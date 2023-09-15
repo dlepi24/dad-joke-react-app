@@ -1,7 +1,6 @@
 import React, { useRef } from 'react';
 import DadJoke from './DadJoke';
 import './App.css';
-import logo from './logo.png';
 
 function App() {
   const jokeContainerRef = useRef(null);
